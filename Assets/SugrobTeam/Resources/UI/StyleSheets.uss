@@ -1,0 +1,143 @@
+.normalState:hover {
+    background-color: rgb(241, 88, 22);
+    border-left-color: rgb(241, 88, 22);
+    border-right-color: rgb(241, 88, 22);
+    border-top-color: rgb(241, 88, 22);
+    border-bottom-color: rgb(241, 88, 22);
+}
+
+.normalState:active {
+    border-left-color: rgb(255, 114, 69);
+    border-right-color: rgb(255, 114, 69);
+    border-top-color: rgb(255, 114, 69);
+    border-bottom-color: rgb(255, 114, 69);
+    background-color: rgb(255, 114, 69);
+}
+
+.normalState {
+    -unity-font-definition: resource('UI/GOST_A');
+    background-color: rgb(28, 34, 50);
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    white-space: normal;
+    font-size: 32px;
+}
+
+.closeBtState {
+    position: absolute;
+    top: 29px;
+    left: 976px;
+    background-image: resource('Image/close');
+    background-color: rgba(255, 255, 255, 0);
+    width: 30px;
+    height: 30px;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+}
+
+.textStyle {
+    -unity-font-definition: resource('UI/GOST_A');
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    position: relative;
+}
+
+.closeBtState:hover {
+    -unity-background-image-tint-color: rgb(181, 0, 42);
+}
+
+.closeBtState:active {
+    -unity-background-image-tint-color: rgb(142, 0, 34);
+}
+
+.aboutWindow {
+    flex-grow: 1;
+    position: absolute;
+    width: 1055px;
+    height: 700px;
+    right: auto;
+    left: 650px;
+    top: 250px;
+    bottom: auto;
+    align-self: center;
+    align-items: center;
+    background-color: rgb(28, 34, 50);
+    border-left-color: rgb(28, 34, 50);
+    border-right-color: rgb(28, 34, 50);
+    border-top-color: rgb(28, 34, 50);
+    border-bottom-color: rgb(28, 34, 50);
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 29px;
+    border-bottom-left-radius: 29px;
+    flex-direction: row;
+    margin-right: 0;
+    padding-right: 5px;
+    display: flex;
+    scale: 0 0;
+    transition-timing-function: ease;
+    transition-duration: 0.25s;
+}
+
+.aboutWindow--Open {
+    scale: 1 1;
+}
+
+.loadScreen--Defualt {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    transition-duration: 0.2s;
+}
+
+.loadScreen--Load {
+    opacity: 0.75;
+}
+
+.textStyle {
+    -unity-font-definition: resource('UI/GOST_A');
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    position: relative;
+}
+
+.loadIcon--Default {
+    flex-grow: 1;
+    position: absolute;
+    left: auto;
+    bottom: 25px;
+    width: 150px;
+    height: 150px;
+    right: 25px;
+    background-image: resource('Image/loadIcon');
+    rotate: 0;
+    transition-duration: 0.001s;
+    transition-timing-function: linear;
+}
+
+.loadIcon--Rotate {
+    transition-duration: 2s;
+    rotate: 360deg;
+    transition-timing-function: linear;
+}
